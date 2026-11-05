@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160d20">
+<title>For Shanny ✦ A little universe of us</title>
+<style>
+:root{--bg:#100b18;--panel:#1b1226;--pink:#f5a9c9;--rose:#ff6f9f;--gold:#e8c98c;--cream:#fff4ee;--muted:#c9b8c9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#49213f 0%,#1b1025 38%,#0d0a14 78%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:43px 43px;z-index:-1}
+nav{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;justify-content:center;gap:20px;padding:14px 10px;background:#100b18b8;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff13}nav a{color:#f4d7e5;text-decoration:none;font:11px Arial,sans-serif;letter-spacing:1.4px;text-transform:uppercase}
+section{padding:100px 22px;max-width:980px;margin:auto}.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding-top:100px}.eyebrow{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font:11px Arial,sans-serif}.hero h1{font-size:clamp(55px,12vw,110px);font-weight:normal;line-height:.95;margin:20px 0;color:#ffe5ef;text-shadow:0 0 35px #ff79ae55}.hero .sub{font-size:clamp(17px,3vw,23px);color:#e8cbd9;max-width:650px;line-height:1.7}.scrollhint{margin-top:45px;color:var(--pink);font:11px Arial,sans-serif;letter-spacing:3px;animation:pulse 2s infinite}@keyframes pulse{50%{opacity:.35}}
+.reel{max-width:700px;margin:20px auto 0;min-height:280px;display:grid;align-content:center;text-align:center;overflow:hidden}.reel p{grid-area:1/1;font-size:clamp(22px,4vw,34px);line-height:1.45;margin:0;opacity:0;transform:translateY(35px);animation:rise 42s infinite}.reel p:nth-child(2){animation-delay:7s}.reel p:nth-child(3){animation-delay:14s}.reel p:nth-child(4){animation-delay:21s}.reel p:nth-child(5){animation-delay:28s}.reel p:nth-child(6){animation-delay:35s}@keyframes rise{0%,1.2%{opacity:0;transform:translateY(35px)}2.4%,13.1%{opacity:1;transform:translateY(0)}14.3%,100%{opacity:0;transform:translateY(-25px)}}
+h2{font-weight:normal;text-align:center;font-size:clamp(32px,6vw,52px);margin:0 0 15px;color:#ffe3ed}.intro{text-align:center;color:var(--muted);font:14px/1.8 Arial,sans-serif;max-width:680px;margin:0 auto 40px}.gold{color:var(--gold)}.card{background:linear-gradient(145deg,#ffffff0d,#ffffff04);border:1px solid #f3c8dc30;border-radius:22px;padding:28px;box-shadow:0 20px 60px #0003}
+.datebig{text-align:center;font-size:clamp(35px,8vw,68px);color:var(--gold);margin:18px 0}.moonrow{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;margin:22px 0}.moon{width:100px;height:100px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff9e7,#e6d7c2 55%,#8f8294 100%);box-shadow:0 0 35px #f4d9b455;position:relative;overflow:hidden}.moon:after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 65% 35%,#21172b,#140e1b 80%);transform:translateX(2.4px);box-shadow:inset -4px 0 10px #f8e9d8}.mooncopy{max-width:430px;color:#e5d3df;font:14px/1.8 Arial,sans-serif;text-align:center}.mooncopy strong{color:var(--gold)}
+.memories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.memory{min-height:250px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}.memory img{width:100%;height:clamp(280px,42vw,390px);object-fit:contain;background:#100b18;border:1px solid #f3c8dc30;border-radius:12px;display:block;margin-bottom:14px}.memory h3{color:var(--gold);font-weight:normal;font-size:23px;margin:10px 0}.memory p{font:13px/1.7 Arial,sans-serif;color:var(--muted);margin:0}.songbox{text-align:center;margin-top:25px}.songbox audio{width:min(100%,430px);margin-top:15px}
+.storygrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.storygrid .card{text-align:center}.storygrid h3{font-size:25px;font-weight:normal;color:var(--gold)}.storygrid p{font:14px/1.8 Arial,sans-serif;color:#d8c7d5}.editnote{font-size:11px!important;color:#f3a9c9!important}
+.zodiac{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;text-align:center}.sign{padding:20px 10px}.sign .symbol{font-size:55px;color:var(--gold)}.sign h3{font-size:24px;font-weight:normal;margin:8px}.plus{font-size:34px;color:var(--pink)}.elements{font:12px/1.8 Arial,sans-serif;color:#d7c6d5}.compat{margin-top:25px;text-align:center;font:14px/1.9 Arial,sans-serif;color:#e5d5df}.compat strong{color:var(--gold)}
+.orbit-wrap{text-align:center}.orbit{width:min(86vw,520px);aspect-ratio:1;margin:25px auto;position:relative;display:grid;place-items:center}.sun{width:clamp(28px,7vw,46px);height:clamp(28px,7vw,46px);border-radius:50%;background:radial-gradient(circle,#fff5bb 0%,#ffbd59 42%,#e87938 75%);box-shadow:0 0 25px #ffb34e,0 0 65px #ff8b3d66;position:absolute;z-index:2}.planet-orbit{position:absolute;border:1px solid #f5c8dc38;border-radius:50%;animation:orbit var(--period) linear infinite}.mercury-orbit{inset:8%;--period:5.8s}.venus-orbit{inset:16%;--period:14.8s}.earth-orbit{inset:24%;--period:24s}.mars-orbit{inset:32%;--period:45.1s}.jupiter-orbit{inset:40%;--period:284.8s}.saturn-orbit{inset:48%;--period:706.4s}.uranus-orbit{inset:56%;--period:2015s}.neptune-orbit{inset:64%;--period:3951s}.planet{position:absolute;top:-4px;left:calc(50% - 4px);width:8px;height:8px;border-radius:50%;box-shadow:0 0 8px currentColor}.mercury{background:#aaa39b;color:#aaa39b;width:5px;height:5px;top:-2.5px;left:calc(50% - 2.5px)}.venus{background:#dfc28b;color:#dfc28b;width:8px;height:8px;top:-4px;left:calc(50% - 4px)}.earth{background:radial-gradient(circle at 35% 30%,#c6f2ff,#3298bf 55%,#17416f);color:#64c9ff;width:9px;height:9px;top:-4.5px;left:calc(50% - 4.5px)}.mars{background:#d97554;color:#d97554;width:7px;height:7px;top:-3.5px;left:calc(50% - 3.5px)}.jupiter{background:#d4ad82;color:#d4ad82;width:18px;height:18px;top:-9px;left:calc(50% - 9px)}.saturn{background:#e2c89d;color:#e2c89d;width:15px;height:15px;top:-7.5px;left:calc(50% - 7.5px)}.saturn:after{content:"";position:absolute;inset:4px -5px;border:2px solid #e8d2a8;border-radius:50%;transform:rotate(-20deg)}.uranus{background:#9bd8d9;color:#9bd8d9;width:12px;height:12px;top:-6px;left:calc(50% - 6px)}.neptune{background:#5587dc;color:#5587dc;width:12px;height:12px;top:-6px;left:calc(50% - 6px)}@keyframes orbit{to{transform:rotate(360deg)}}.orbitlabel{font:11px/1.9 Arial,sans-serif;letter-spacing:1.5px;color:var(--muted);margin-top:12px}.orbitnote{font:12px/1.8 Arial,sans-serif;color:#d7c6d5;max-width:560px;margin:12px auto 0}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:25px auto;max-width:650px}.unit{background:#ffffff0b;border:1px solid #f5a9c933;border-radius:14px;padding:16px 6px}.unit b{display:block;font:clamp(22px,5vw,36px) Arial;color:var(--gold);font-weight:normal}.unit span{font:10px Arial;letter-spacing:1.5px;color:#cbb8ca;text-transform:uppercase}.live{font:13px/1.8 Arial,sans-serif;color:#e9d9e5;text-align:center}.live strong{color:var(--pink)}footer{text-align:center;padding:70px 20px 90px;color:#cdb8c8;font:12px/2 Arial,sans-serif}footer .heart{font-size:30px;color:#ff85ad}
+@media(max-width:650px){nav{gap:11px}nav a{font-size:9px;letter-spacing:.8px}.memories,.storygrid{grid-template-columns:1fr}.memory{min-height:230px}.zodiac{grid-template-columns:1fr}.plus{transform:rotate(90deg)}section{padding:85px 17px}.counter{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<nav><a href="#beginning">Beginning</a><a href="#date">Our date</a><a href="#memories">Memories</a><a href="#stars">Our stars</a><a href="#time">Our time</a></nav>
+<section class="hero" id="beginning">
+ <div><div class="eyebrow">A little universe made for you</div><h1>For Shanny<span class="gold">.</span></h1>
+ <p class="sub">Some people make ordinary days feel special. This little corner of the universe is here to remind you how much you mean to me.</p>
+ <div class="scrollhint">SCROLL SLOWLY · THERE'S A STORY HERE ↓</div></div>
+</section>
+<section>
+ <h2>Before anything else…</h2><p class="intro">Take a moment. These words are for you.</p>
+ <div class="card reel" aria-label="A scrolling-style love message">
+  <p>I hope you never have to question whether you matter to me.</p>
+  <p>You do more than I can fit into one page.</p>
+  <p>I appreciate your presence, your smile, your little ways, and the person you are.</p>
+  <p>Thank you for being part of my story.</p>
+  <p>You are not just a date on my calendar.</p>
+  <p>You are someone I am grateful to know, cherish, and make memories with.</p>
+ </div>
+</section>
+<section id="date">
+ <h2>The day our story began</h2><p class="intro">One date. One beginning. A memory I wanted to keep under the same sky.</p>
+ <div class="card">
+  <div class="eyebrow" style="text-align:center">The day we started dating</div><div class="datebig">20 · 01 · 2026</div>
+  <div class="moonrow"><div class="moon" aria-label="A thin waxing crescent Moon with about 3 percent illumination, as seen from the Southern Hemisphere"></div><div class="mooncopy"><strong>The Moon on our day: a waxing crescent.</strong><br>On 20 January 2026, the Moon was a very young waxing crescent, with about 3 percent illumination. From the Southern Hemisphere, its thin sunlit crescent appeared on the left. A tiny new crescent in the sky marked the day a new chapter began for us.</div></div>
+  <p class="intro" style="margin-bottom:0">A small beginning can still hold a whole universe of possibility.</p>
+ </div>
+</section>
+<section id="memories">
+ <h2>Our little collection</h2><p class="intro">A few of our favourite pictures and moments to keep close.</p>
+ <div class="memories">
+  <div class="card memory"><img src="images/my-favourite-of-shanny.jpg" alt="My favourite picture of Shanny"><h3>My favourite picture of you</h3><p>A picture of you that I could look at a thousand times.</p></div>
+  <div class="card memory"><img src="images/shannys-favourite-of-me.jpg" alt="Shanny's favourite picture of me"><h3>Your favourite picture of me</h3><p>The picture of me that you love the most.</p></div>
+  <div class="card memory"><img src="images/our-first-picture.jpg" alt="Our first picture together"><h3>Our first picture together</h3><p>The first photo we took together, marking the beginning of our collection.</p></div>
+  <div class="card memory"><img src="images/another-picture-of-us.jpg" alt="Another picture of us"><h3>Another picture of us</h3><p>One more moment together that deserves a place in our little universe.</p></div>
+ </div>
+ <div class="card songbox"><h3 style="font-weight:normal;color:var(--gold)">Our song</h3><p class="intro">Press play whenever you want to revisit the feeling.</p><audio id="songPlayer" controls preload="metadata"><source src="./music/our-song.mp3" type="audio/mpeg">Your browser does not support audio playback.</audio><p id="songStatus" class="intro" role="status">Loading song…</p></div>
+</section>
+<section>
+ <h2>The moments I keep</h2><p class="intro">I don't know the exact words you would use to describe these memories, so I left the story open for you to personalise.</p>
+ <div class="storygrid">
+  <div class="card"><div class="symbol">♡</div><h3>Our first meeting</h3><p>That was the day a name and a voice became someone standing right in front of me. A memory worth keeping.</p><p class="editnote">24 July 2026</p></div>
+  <div class="card"><div class="symbol">✧</div><h3>Our first hug</h3><p>For a moment, words were not needed. Just two people sharing a little warmth and making a memory.</p></div>
+  <div class="card"><div class="symbol">☾</div><h3>Our first kiss</h3><p>A first kiss is a small moment that can stay in your mind for a long time. Ours deserves its own place in this story.</p></div>
+  <div class="card"><div class="symbol">∞</div><h3>More memories ahead</h3><p>There are still places to go, pictures to take, laughs to share, and beautiful ordinary days waiting to become memories.</p></div>
+ </div>
+</section>
+<section id="stars">
+ <h2>Written in the stars</h2><p class="intro">A playful zodiac reading, not a rule for love, but a poetic way to describe two different energies finding a rhythm.</p>
+ <div class="card">
+  <div class="zodiac">
+   <div class="sign"><div class="symbol">♊ / ♋</div><h3>You · 21 June</h3><div class="elements">Gemini and Cancer cusp<br>Air / Water symbolism<br>Curiosity, feeling, care</div></div>
+   <div class="plus">✦</div>
+   <div class="sign"><div class="symbol">♌</div><h3>Shanny · 8 August</h3><div class="elements">Leo<br>Fire element<br>Warmth, courage, loyalty</div></div>
+  </div>
+  <div class="compat"><strong>Air + Water + Fire</strong><br>Gemini brings curiosity and conversation. Cancer brings emotional depth and tenderness. Leo brings warmth, confidence, and a generous heart. If your Sun sign is Gemini, its Air can fan Leo's Fire, making the pairing lively, expressive, and playful. If it is Cancer, the pairing is more like Water meeting Fire: different and intense, and it asks for understanding and balance. Either way, what makes a bond strong is not a horoscope declaring it unbreakable. It is the patience, honesty, respect, and care you choose every day.<br><br><span class="gold">The stars can give us a story. We give it meaning.</span></div>
+ </div>
+</section>
+<section id="time">
+ <h2>Our little solar system</h2><p class="intro">The Earth keeps moving around the Sun. And this clock keeps counting from the day our story began ...counting down to the day i put a ring on your finger and loving you for infinity.</p>
+ <div class="orbit-wrap card">
+  <div class="orbit" role="img" aria-label="Model of the Sun and all eight planets orbiting in order"><div class="sun"></div><div class="planet-orbit mercury-orbit"><span class="planet mercury"></span></div><div class="planet-orbit venus-orbit"><span class="planet venus"></span></div><div class="planet-orbit earth-orbit"><span class="planet earth"></span></div><div class="planet-orbit mars-orbit"><span class="planet mars"></span></div><div class="planet-orbit jupiter-orbit"><span class="planet jupiter"></span></div><div class="planet-orbit saturn-orbit"><span class="planet saturn"></span></div><div class="planet-orbit uranus-orbit"><span class="planet uranus"></span></div><div class="planet-orbit neptune-orbit"><span class="planet neptune"></span></div></div>
+  <div class="orbitlabel">THE SUN · MERCURY · VENUS · EARTH · MARS<br>JUPITER · SATURN · URANUS · NEPTUNE</div>
+  <p class="orbitnote">The planets orbit in the correct order, with their orbital speeds shown in proportion. Planet sizes and distances are compressed so the whole Solar System fits on screen.</p>
+  <div class="eyebrow" style="margin-top:35px">Since 20 January 2026</div>
+  <div class="counter">
+   <div class="unit"><b id="days">—</b><span>Days</span></div><div class="unit"><b id="hours">—</b><span>Hours</span></div><div class="unit"><b id="minutes">—</b><span>Minutes</span></div><div class="unit"><b id="seconds">—</b><span>Seconds</span></div>
+  </div>
+  <div class="live">Today is <strong id="today">—</strong><br>Current local time <strong id="clock">—</strong><br><span style="font-size:11px;color:#bdaaba">This live clock uses the visitor's device time.</span></div>
+ </div>
+</section>
+<footer><div class="heart">♡</div><div>Made with care, for Shanny.</div><div>May the little moments always matter.</div></footer>
+<script>
+const start=new Date(2026,0,20,0,0,0);
+function updateClock(){const now=new Date();let diff=Math.max(0,now-start);const total=Math.floor(diff/1000);document.getElementById('days').textContent=Math.floor(total/86400).toLocaleString();document.getElementById('hours').textContent=String(Math.floor(total%86400/3600)).padStart(2,'0');document.getElementById('minutes').textContent=String(Math.floor(total%3600/60)).padStart(2,'0');document.getElementById('seconds').textContent=String(total%60).padStart(2,'0');document.getElementById('today').textContent=new Intl.DateTimeFormat(undefined,{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(now);document.getElementById('clock').textContent=new Intl.DateTimeFormat(undefined,{hour:'2-digit',minute:'2-digit',second:'2-digit'}).format(now)}
+updateClock();setInterval(updateClock,1000);
+const songPlayer=document.getElementById('songPlayer');
+const songStatus=document.getElementById('songStatus');
+songPlayer.addEventListener('loadedmetadata',()=>{const duration=Math.floor(songPlayer.duration);songStatus.textContent=`Track loaded · ${Math.floor(duration/60)}:${String(duration%60).padStart(2,'0')}`});
+songPlayer.addEventListener('error',()=>{songStatus.textContent='The song could not be loaded. Make sure music/our-song.mp3 is next to this page.'});
+</script>
+</body></html>
